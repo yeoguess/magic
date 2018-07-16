@@ -4,15 +4,15 @@
 		<div class="row">
 			<div class="mcol col-md-12">
 				<p class="collection men">Men's <br>Collection</p>
-				<a href="mens.html" class="mbutton">View All</a>
+				<a href="<?php echo get_site_url(); ?>/men" class="mbutton">View All</a>
 			</div>
 			<div class="fcol col-md-8">
 				<p class="collection women">Women's <br>Collection</p>
-				<a href="womens.html" class="fbutton">View All</a>
+				<a href="<?php echo get_site_url(); ?>/women" class="fbutton">View All</a>
 			</div>
 			<div class="kcol col-md-4">
 				<p class="collection kids">Kid's <br>Collection</p>
-				<a href="kids.html" class="kbutton">View All</a>
+				<a href="<?php echo get_site_url(); ?>/children" class="kbutton">View All</a>
 			</div>
 		</div>
 	</section>
@@ -44,7 +44,7 @@
 					<img src="<?php echo $img['url']?>" alt="Flip Flop 1" class="product-image center-block">
 					<p class="product-title"><?php the_title();  ?></p>
 					<p class="product-price"><?php echo get_field('price'); ?></p>
-					<a href="#"><button class="btn view center-block">View</button></a>
+					<a href="<?php echo get_site_url(); ?>/single"><button class="btn view center-block">View</button></a>
 				</div>
 
 			<?php endwhile; endif; wp_reset_query(); ?>
